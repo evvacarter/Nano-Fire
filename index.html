@@ -5,11 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nano fire</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <canvas id="fireworks"></canvas>
-    <div class="title">Neon fireworks</div>
-    <div class="subtitle">MOVE YOUR POINTER TO CREATE SPARKS</div>
+    <div class="header-ui">
+        <div class="title">Nano fire </div>
+        <div class="subtitle" id="instructionText">MOVE YOUR POINTER TO CREATE SPARKS</div>
+    </div>
+    <button id="modeToggle" class="toggle-btn">Switch to SKY Shorts </button>
+    <!-- Theme code-->
+     <div class="theme-picker">
+        <button id="themeButton" class="theme-button" type="button">
+            Change Theme
+        </button>
+        <div id="themeOptions" class="theme-options">
+            <button class="theme-option" type="button" data-image="1st wallpaper.avif">
+                <img src="1st wallpaper.avif" alt="wallpaper1">
+                <span>Wallpaper 1</span> 
+            </button>
+            <button class="theme-option" type="button" data-image="2nd wallpaper.avif">
+                <img src="2nd wallpaper.avif" alt="wallpaper2">
+                <span>Wallpaper 2</span>
+            </button>
+            <button class="theme-option" type="button" data-image="3rd wallpaper.avif">
+                <img src="3rd wallpaper.avif" alt="wallpaper3">
+                <span>Wallpaper 3</span>
+            </button>
+            <button class="theme-option" type="button" data-image="4th wallpaper.avif">
+                <img src="4th wallpaper.avif" alt="wallpaper4">
+                <span>Wallpaper 4</span>
+            </button>
+            <button class="theme-option" type="button" data-image="none">
+                <div class="black-thumbnail"></div>
+                <span>Pure Black</span>
+            </button>
+                    
+        </div>
+     </div>
+
+    <script src="script.js" ></script>
 </body>
-</html>
+</html> 
